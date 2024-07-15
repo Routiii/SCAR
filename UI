@@ -1,16 +1,7 @@
---[[
-  UI lib made by bungie#0001
-  
-  - Please do not use this without permission, I am working really hard on this UI to make it perfect and do not have a big 
-    problem with other people using it, please just make sure you message me and ask me before using.
-]]
-
--- / Locals
 local Workspace = game:GetService("Workspace")
 local Player = game:GetService("Players").LocalPlayer
 local Mouse = Player:GetMouse()
 
--- / Services
 local UserInputService = game:GetService("UserInputService")
 local TextService = game:GetService("TextService")
 local TweenService = game:GetService("TweenService")
@@ -19,7 +10,6 @@ local CoreGuiService = game:GetService("CoreGui")
 local ContentService = game:GetService("ContentProvider")
 local TeleportService = game:GetService("TeleportService")
 
--- / Tween table & function
 local TweenTable = {
     Default = {
         TweenInfo.new(0.17, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0)
@@ -79,7 +69,7 @@ local drag = function(obj, latency)
 end
 
 local library = {
-    version = "vBETA",
+    version = "BETA",
     title = title or "SCAR " .. tostring(math.random(1,366)),
     fps = 0,
     rank = "private"
